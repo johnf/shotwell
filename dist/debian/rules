@@ -3,14 +3,14 @@
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
-	dh $@ --parallel --with gnome --buildsystem=meson
+	dh $@ --with gnome --buildsystem=meson
 
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		--libexec=/usr/lib \
-		-Dunity-support=true \
-		-Dinstall-apport-hook=true
+		-Denable-unity-support=true \
+		-Dinstall-apport-hook=true \
+		-Dface-detection=true
 
 override_dh_gnome_clean:
 	dh_gnome_clean --no-control
-
