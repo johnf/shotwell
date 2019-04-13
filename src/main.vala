@@ -270,8 +270,7 @@ void dump_tags (GExiv2.Metadata metadata, string[] tags) throws Error {
 void dump_metadata (string filename) {
     try {
         var metadata = new GExiv2.Metadata();
-        var file = File.new_for_commandline_arg(filename);
-        metadata.from_stream (file.read());
+        metadata.open_path (filename);
 
         dump_tags(metadata, metadata.get_exif_tags());
         dump_tags(metadata, metadata.get_iptc_tags());
