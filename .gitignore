@@ -85,3 +85,17 @@ virtualization/vagrant/config
 
 # Stuff from running flatpak in-tree
 .flatpak-builder
+
+# debian stuff
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/shotwell-common.substvars
+debian/shotwell-common/
+debian/shotwell.postinst.debhelper
+debian/shotwell.postrm.debhelper
+debian/shotwell.substvars
+debian/shotwell/
+debian/tmp/
+obj-x86_64-linux-gnu/
+po/shotwell.pot
