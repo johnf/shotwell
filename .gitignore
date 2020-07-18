@@ -100,3 +100,4 @@ debian/tmp/
 obj-x86_64-linux-gnu/
 po/shotwell.pot
 *.deb
+package_cache
