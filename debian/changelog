@@ -1,8 +1,8 @@
-shotwell (0.31.0-0~johnf) cosmic; urgency=medium
+shotwell (0.31.2-0~johnf) focal; urgency=medium
 
   * Manual Build
 
- -- John Ferlito <johnf@inodes.org>  Sat, 13 Apr 2019 10:11:48 -0400
+ -- John Ferlito <johnf@inodes.org>  Sat, 18 Jul 2020 14:47:48 +1100
 
 shotwell (0.27.0-0~jensge1~artful1) artful; urgency=medium
 
