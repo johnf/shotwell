@@ -1,4 +1,4 @@
-FROM ubuntu:disco
+FROM ubuntu:focal
 
 # Update debian and install build tools
 RUN apt-get -qq update && apt-get -qq upgrade -y \

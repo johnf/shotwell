@@ -2,7 +2,9 @@
 
 git checkout master
 git fetch upstream
-git merge upstream/master
+git merge upstream/master # Should be a fast forward
+git push
+git diff shotwel-xx
 git checkout debian-update
 git rebase master
 
