@@ -16,5 +16,3 @@ docker run -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt/archives bu
 
 # Shell
 docker run -it -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt/archives build-package /bin/bash
-
-
