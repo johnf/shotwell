@@ -1,0 +1,17 @@
+# rebase against upstream then
+
+git checkout master
+git fetch upstream
+git merge upstream/master
+git checkout debian-update
+git rebase master
+
+# Refresh docker image
+docker build --no-cache -t build-package .
+
+# Build SHotwell
+docker run -v $(pwd):/mnt/src build-package
+
+# Old
+dpkg-buildpackage -i -I
+
