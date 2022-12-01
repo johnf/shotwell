@@ -8,8 +8,10 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 override_dh_auto_configure:
 	dh_auto_configure -- \
 		--libexec=/usr/lib \
-		-Denable-unity-support=true \
-		-Dface-detection=true
+		-Dunity_support=true \
+		-Ddupe_detection=true \
+		-Dface_detection=true\
+		-Dudev=true
 
 override_dh_gnome_clean:
 	dh_gnome_clean --no-control

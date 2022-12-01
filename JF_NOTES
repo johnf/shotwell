@@ -12,7 +12,7 @@ git rebase master
 docker build --no-cache -t build-package .
 
 # Build Shotwell
-docker run -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt/archives build-package
+docker run -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt build-package
 
 # Shell
-docker run -it -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt/archives build-package /bin/bash
+docker run -it -v $(pwd):/mnt/src -v $(pwd)/package_cache:/var/cache/apt build-package /bin/bash
