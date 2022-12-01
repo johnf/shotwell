@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:kinetic
 
 # Update debian and install build tools
 RUN apt-get -qq update && apt-get -qq upgrade -y \
